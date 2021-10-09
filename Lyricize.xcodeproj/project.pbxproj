@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B23A53C2271213740004A863 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53C1271213740004A863 /* Tests_iOS.swift */; };
+		B23A53C4271213740004A863 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53C3271213740004A863 /* Tests_iOSLaunchTests.swift */; };
+		B23A53CE271213740004A863 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53CD271213740004A863 /* Tests_macOS.swift */; };
+		B23A53D0271213740004A863 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53CF271213740004A863 /* Tests_macOSLaunchTests.swift */; };
+		B23A53D1271213740004A863 /* Lyricize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B23A53A6271213710004A863 /* Lyricize.xcdatamodeld */; };
+		B23A53D2271213740004A863 /* Lyricize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B23A53A6271213710004A863 /* Lyricize.xcdatamodeld */; };
+		B23A53D3271213740004A863 /* LyricizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53A8271213710004A863 /* LyricizeApp.swift */; };
+		B23A53D4271213740004A863 /* LyricizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53A8271213710004A863 /* LyricizeApp.swift */; };
+		B23A53D5271213740004A863 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53A9271213710004A863 /* ContentView.swift */; };
+		B23A53D6271213740004A863 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53A9271213710004A863 /* ContentView.swift */; };
+		B23A53D7271213740004A863 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53AA271213710004A863 /* Persistence.swift */; };
+		B23A53D8271213740004A863 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53AA271213710004A863 /* Persistence.swift */; };
+		B23A53D9271213740004A863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A53AB271213740004A863 /* Assets.xcassets */; };
+		B23A53DA271213740004A863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A53AB271213740004A863 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B23A53BE271213740004A863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B23A53A1271213710004A863 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B23A53AF271213740004A863;
+			remoteInfo = "Lyricize (iOS)";
+		};
+		B23A53CA271213740004A863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B23A53A1271213710004A863 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B23A53B5271213740004A863;
+			remoteInfo = "Lyricize (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B23A53A7271213710004A863 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		B23A53A8271213710004A863 /* LyricizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricizeApp.swift; sourceTree = "<group>"; };
+		B23A53A9271213710004A863 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B23A53AA271213710004A863 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B23A53AB271213740004A863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B23A53B0271213740004A863 /* Lyricize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyricize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23A53B6271213740004A863 /* Lyricize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyricize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23A53B8271213740004A863 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		B23A53BD271213740004A863 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23A53C1271213740004A863 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		B23A53C3271213740004A863 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		B23A53C9271213740004A863 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23A53CD271213740004A863 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		B23A53CF271213740004A863 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B23A53AD271213740004A863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23A53B3271213740004A863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23A53BA271213740004A863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23A53C6271213740004A863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B23A53A0271213710004A863 = {
+			isa = PBXGroup;
+			children = (
+				B23A53A5271213710004A863 /* Shared */,
+				B23A53B7271213740004A863 /* macOS */,
+				B23A53C0271213740004A863 /* Tests iOS */,
+				B23A53CC271213740004A863 /* Tests macOS */,
+				B23A53B1271213740004A863 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B23A53A5271213710004A863 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B23A53A8271213710004A863 /* LyricizeApp.swift */,
+				B23A53A9271213710004A863 /* ContentView.swift */,
+				B23A53AA271213710004A863 /* Persistence.swift */,
+				B23A53AB271213740004A863 /* Assets.xcassets */,
+				B23A53A6271213710004A863 /* Lyricize.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B23A53B1271213740004A863 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B23A53B0271213740004A863 /* Lyricize.app */,
+				B23A53B6271213740004A863 /* Lyricize.app */,
+				B23A53BD271213740004A863 /* Tests iOS.xctest */,
+				B23A53C9271213740004A863 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B23A53B7271213740004A863 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B23A53B8271213740004A863 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		B23A53C0271213740004A863 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B23A53C1271213740004A863 /* Tests_iOS.swift */,
+				B23A53C3271213740004A863 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		B23A53CC271213740004A863 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B23A53CD271213740004A863 /* Tests_macOS.swift */,
+				B23A53CF271213740004A863 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B23A53AF271213740004A863 /* Lyricize (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23A53DD271213740004A863 /* Build configuration list for PBXNativeTarget "Lyricize (iOS)" */;
+			buildPhases = (
+				B23A53AC271213740004A863 /* Sources */,
+				B23A53AD271213740004A863 /* Frameworks */,
+				B23A53AE271213740004A863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lyricize (iOS)";
+			productName = "Lyricize (iOS)";
+			productReference = B23A53B0271213740004A863 /* Lyricize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B23A53B5271213740004A863 /* Lyricize (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23A53E0271213740004A863 /* Build configuration list for PBXNativeTarget "Lyricize (macOS)" */;
+			buildPhases = (
+				B23A53B2271213740004A863 /* Sources */,
+				B23A53B3271213740004A863 /* Frameworks */,
+				B23A53B4271213740004A863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lyricize (macOS)";
+			productName = "Lyricize (macOS)";
+			productReference = B23A53B6271213740004A863 /* Lyricize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B23A53BC271213740004A863 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23A53E3271213740004A863 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				B23A53B9271213740004A863 /* Sources */,
+				B23A53BA271213740004A863 /* Frameworks */,
+				B23A53BB271213740004A863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B23A53BF271213740004A863 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = B23A53BD271213740004A863 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B23A53C8271213740004A863 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23A53E6271213740004A863 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				B23A53C5271213740004A863 /* Sources */,
+				B23A53C6271213740004A863 /* Frameworks */,
+				B23A53C7271213740004A863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B23A53CB271213740004A863 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = B23A53C9271213740004A863 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B23A53A1271213710004A863 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					B23A53AF271213740004A863 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					B23A53B5271213740004A863 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					B23A53BC271213740004A863 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B23A53AF271213740004A863;
+					};
+					B23A53C8271213740004A863 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B23A53B5271213740004A863;
+					};
+				};
+			};
+			buildConfigurationList = B23A53A4271213710004A863 /* Build configuration list for PBXProject "Lyricize" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B23A53A0271213710004A863;
+			productRefGroup = B23A53B1271213740004A863 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B23A53AF271213740004A863 /* Lyricize (iOS) */,
+				B23A53B5271213740004A863 /* Lyricize (macOS) */,
+				B23A53BC271213740004A863 /* Tests iOS */,
+				B23A53C8271213740004A863 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B23A53AE271213740004A863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23A53D9271213740004A863 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23A53B4271213740004A863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23A53DA271213740004A863 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23A53BB271213740004A863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23A53C7271213740004A863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B23A53AC271213740004A863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23A53D3271213740004A863 /* LyricizeApp.swift in Sources */,
+				B23A53D7271213740004A863 /* Persistence.swift in Sources */,
+				B23A53D1271213740004A863 /* Lyricize.xcdatamodeld in Sources */,
+				B23A53D5271213740004A863 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23A53B2271213740004A863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23A53D4271213740004A863 /* LyricizeApp.swift in Sources */,
+				B23A53D8271213740004A863 /* Persistence.swift in Sources */,
+				B23A53D2271213740004A863 /* Lyricize.xcdatamodeld in Sources */,
+				B23A53D6271213740004A863 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23A53B9271213740004A863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23A53C4271213740004A863 /* Tests_iOSLaunchTests.swift in Sources */,
+				B23A53C2271213740004A863 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23A53C5271213740004A863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23A53D0271213740004A863 /* Tests_macOSLaunchTests.swift in Sources */,
+				B23A53CE271213740004A863 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B23A53BF271213740004A863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B23A53AF271213740004A863 /* Lyricize (iOS) */;
+			targetProxy = B23A53BE271213740004A863 /* PBXContainerItemProxy */;
+		};
+		B23A53CB271213740004A863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B23A53B5271213740004A863 /* Lyricize (macOS) */;
+			targetProxy = B23A53CA271213740004A863 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B23A53DB271213740004A863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B23A53DC271213740004A863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B23A53DE271213740004A863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNB254QAJ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.Lyricize;
+				PRODUCT_NAME = Lyricize;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B23A53DF271213740004A863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNB254QAJ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.Lyricize;
+				PRODUCT_NAME = Lyricize;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B23A53E1271213740004A863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNB254QAJ4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.Lyricize;
+				PRODUCT_NAME = Lyricize;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B23A53E2271213740004A863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNB254QAJ4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.Lyricize;
+				PRODUCT_NAME = Lyricize;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B23A53E4271213740004A863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNB254QAJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sammcgarry.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lyricize (iOS)";
+			};
+			name = Debug;
+		};
+		B23A53E5271213740004A863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNB254QAJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sammcgarry.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lyricize (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B23A53E7271213740004A863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNB254QAJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sammcgarry.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Lyricize (macOS)";
+			};
+			name = Debug;
+		};
+		B23A53E8271213740004A863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNB254QAJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sammcgarry.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Lyricize (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B23A53A4271213710004A863 /* Build configuration list for PBXProject "Lyricize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23A53DB271213740004A863 /* Debug */,
+				B23A53DC271213740004A863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23A53DD271213740004A863 /* Build configuration list for PBXNativeTarget "Lyricize (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23A53DE271213740004A863 /* Debug */,
+				B23A53DF271213740004A863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23A53E0271213740004A863 /* Build configuration list for PBXNativeTarget "Lyricize (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23A53E1271213740004A863 /* Debug */,
+				B23A53E2271213740004A863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23A53E3271213740004A863 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23A53E4271213740004A863 /* Debug */,
+				B23A53E5271213740004A863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23A53E6271213740004A863 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23A53E7271213740004A863 /* Debug */,
+				B23A53E8271213740004A863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B23A53A6271213710004A863 /* Lyricize.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B23A53A7271213710004A863 /* Shared.xcdatamodel */,
+			);
+			currentVersion = B23A53A7271213710004A863 /* Shared.xcdatamodel */;
+			path = Lyricize.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B23A53A1271213710004A863 /* Project object */;
+}

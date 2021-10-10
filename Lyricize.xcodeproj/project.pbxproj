@@ -21,6 +21,12 @@
 		B23A53D8271213740004A863 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53AA271213710004A863 /* Persistence.swift */; };
 		B23A53D9271213740004A863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A53AB271213740004A863 /* Assets.xcassets */; };
 		B23A53DA271213740004A863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A53AB271213740004A863 /* Assets.xcassets */; };
+		B23A53EA27122E0A0004A863 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53E927122E0A0004A863 /* NetworkClient.swift */; };
+		B23A53EB27122E0A0004A863 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53E927122E0A0004A863 /* NetworkClient.swift */; };
+		B23A53ED2712619F0004A863 /* ShazamClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53EC2712619F0004A863 /* ShazamClient.swift */; };
+		B23A53EE2712619F0004A863 /* ShazamClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53EC2712619F0004A863 /* ShazamClient.swift */; };
+		B23A53F02712623F0004A863 /* AudioInputMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53EF2712623F0004A863 /* AudioInputMonitor.swift */; };
+		B23A53F12712623F0004A863 /* AudioInputMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23A53EF2712623F0004A863 /* AudioInputMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,9 @@
 		B23A53C9271213740004A863 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23A53CD271213740004A863 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B23A53CF271213740004A863 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		B23A53E927122E0A0004A863 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		B23A53EC2712619F0004A863 /* ShazamClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamClient.swift; sourceTree = "<group>"; };
+		B23A53EF2712623F0004A863 /* AudioInputMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInputMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,9 @@
 				B23A53A8271213710004A863 /* LyricizeApp.swift */,
 				B23A53A9271213710004A863 /* ContentView.swift */,
 				B23A53AA271213710004A863 /* Persistence.swift */,
+				B23A53E927122E0A0004A863 /* NetworkClient.swift */,
+				B23A53EC2712619F0004A863 /* ShazamClient.swift */,
+				B23A53EF2712623F0004A863 /* AudioInputMonitor.swift */,
 				B23A53AB271213740004A863 /* Assets.xcassets */,
 				B23A53A6271213710004A863 /* Lyricize.xcdatamodeld */,
 			);
@@ -309,7 +321,10 @@
 			files = (
 				B23A53D3271213740004A863 /* LyricizeApp.swift in Sources */,
 				B23A53D7271213740004A863 /* Persistence.swift in Sources */,
+				B23A53EA27122E0A0004A863 /* NetworkClient.swift in Sources */,
 				B23A53D1271213740004A863 /* Lyricize.xcdatamodeld in Sources */,
+				B23A53F02712623F0004A863 /* AudioInputMonitor.swift in Sources */,
+				B23A53ED2712619F0004A863 /* ShazamClient.swift in Sources */,
 				B23A53D5271213740004A863 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +335,10 @@
 			files = (
 				B23A53D4271213740004A863 /* LyricizeApp.swift in Sources */,
 				B23A53D8271213740004A863 /* Persistence.swift in Sources */,
+				B23A53EB27122E0A0004A863 /* NetworkClient.swift in Sources */,
 				B23A53D2271213740004A863 /* Lyricize.xcdatamodeld in Sources */,
+				B23A53F12712623F0004A863 /* AudioInputMonitor.swift in Sources */,
+				B23A53EE2712619F0004A863 /* ShazamClient.swift in Sources */,
 				B23A53D6271213740004A863 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -463,6 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -477,21 +497,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NNB254QAJ4;
+				DEVELOPMENT_TEAM = 46TV4HNLFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to your microphone in order to detect music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.Lyricize;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sammcgarry.Lyricize;
 				PRODUCT_NAME = Lyricize;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -507,21 +528,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NNB254QAJ4;
+				DEVELOPMENT_TEAM = 46TV4HNLFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to your microphone in order to detect music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sammcgarry.Lyricize;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sammcgarry.Lyricize;
 				PRODUCT_NAME = Lyricize;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;

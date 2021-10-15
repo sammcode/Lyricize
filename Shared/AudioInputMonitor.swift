@@ -26,7 +26,7 @@ class AudioInputMonitor: ObservableObject {
         if audioSession.recordPermission != .granted {
             audioSession.requestRecordPermission { (isGranted) in
                 if !isGranted {
-                    fatalError("You must allow audio recording for this demo to work")
+                    AlertProvider.shared.showAlertWithTitle(message: "Looks like the app doesn't have access to your microphone. You can change this by going to Settings -> Lyricize -> Microphone", title: "No microphone access.", dismissButtonText: "Ok")
                 }
             }
         }
@@ -53,7 +53,6 @@ class AudioInputMonitor: ObservableObject {
         audioRecorder.isMeteringEnabled = true
         audioRecorder.record()
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { (timer) in
-            // 7
             self.audioRecorder.updateMeters()
             self.soundSamples[self.currentSample] = self.audioRecorder.averagePower(forChannel: 0)
             self.currentSample = (self.currentSample + 1) % self.numberOfSamples
